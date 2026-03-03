@@ -1,0 +1,75 @@
+db.Restaurent.find() 
+{ 
+_id: ObjectId('699936edefa677e3fe5c71e4'), 
+restaurant_id: '1001', 
+name: 'Green Leaf', 
+borough: 'Manhattan', 
+cuisine: 'Vegetarian' 
+} 
+{ 
+_id: ObjectId('699936edefa677e3fe5c71e5'), 
+restaurant_id: '1002', 
+name: 'Ocean Delight', 
+borough: 'Brooklyn', 
+cuisine: 'Seafood' 
+} 
+{ 
+_id: ObjectId('699936edefa677e3fe5c71e6'), 
+restaurant_id: '1003', 
+name: 'Spicy Villa', 
+borough: 'Queens', 
+cuisine: 'Indian' 
+} 
+{ 
+_id: ObjectId('699936edefa677e3fe5c71e7'), 
+restaurant_id: '1004', 
+name: 'Pasta House', 
+borough: 'Bronx', 
+cuisine: 'Italian' 
+} 
+{ 
+_id: ObjectId('699936edefa677e3fe5c71e8'), 
+restaurant_id: '1005', 
+name: 'Taco Town', 
+borough: 'Staten Island', 
+cuisine: 'Mexican' 
+} 
+{ 
+_id: ObjectId('699936edefa677e3fe5c71e9'), 
+restaurant_id: '1006',
+name: 'Dragon Palace', 
+borough: 'Manhattan', 
+cuisine: 'Chinese' 
+} 
+{ 
+_id: ObjectId('699936edefa677e3fe5c71ea'), 
+restaurant_id: '1007', 
+name: 'Burger Hub', 
+borough: 'Brooklyn', 
+cuisine: 'American' 
+} 
+{ 
+_id: ObjectId('699936edefa677e3fe5c71eb'), 
+restaurant_id: '1008', 
+name: 'Sushi World', 
+borough: 'Queens', 
+cuisine: 'Japanese' 
+} 
+{ 
+_id: ObjectId('699936edefa677e3fe5c71ec'), 
+restaurant_id: '1009', 
+name: 'BBQ Corner', 
+borough: 'Bronx', 
+cuisine: 'Barbecue' 
+} 
+{ 
+_id: ObjectId('699936edefa677e3fe5c71ed'), 
+restaurant_id: '1010', 
+name: 'Paris Bistro', 
+borough: 'Manhattan', 
+cuisine: 'French' 
+} 
+ 
+QUERY: 
+ 
+db.Restaurent.find({},{_id:0,restaurant_id:1,name:1,borough:1,cuisine:1})
