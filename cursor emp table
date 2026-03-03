@@ -1,0 +1,23 @@
+ 
+SQL> create table emp(id int, name varchar(10),salary int); 
+Table created. 
+SQL> insert into emp values(1,'ram',2000); 
+1 row created. 
+SQL> insert into emp values(2,'sam',3000) 
+1 row created. 
+ 
+1 declare 
+2 Cursor emp_cur is 
+3 select name,salary from emp; 
+4 vname emp.name%type; 
+5 vsalary emp.salary%type; 
+6 begin 
+7 open emp_cur; 
+8 loop 
+9 fetch emp_cur into vname,vsalary; 
+10 exit when emp_cur%notfound; 
+11 dbms_output.put_line('name'||vname||' '||'salary'||vsalary); 
+12 end loop; 
+13 close emp_cur; 
+14* end; 
+SQL> / 
